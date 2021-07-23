@@ -29,14 +29,14 @@ export const CreateScreen = () => {
 
     return (
         <>
-        { loading ? <Loader/>
+        <div className="container px-4 px-lg-5 mt-5 ">
+            <div className="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <h1>Create new post</h1>
+                    <hr/>
+                { loading ? <Loader/>
             :
-        <div className="container">
-            <h1>Create new post</h1>
-            <hr/>
-
-            <div className="row">
-                <div className="col-md-5 col-sm-12">
+        
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
                             <label htmlFor="title">Title: </label>
@@ -61,7 +61,7 @@ export const CreateScreen = () => {
                                 onBlur={handleBlur}
                                 type="text"
                                 placeholder="Write here..."
-                                className="form-control mb-2"
+                                className="form-control mb-2 form-content"
                                 autoComplete="off"
                             ></textarea>
                               
@@ -75,13 +75,11 @@ export const CreateScreen = () => {
                             Create
                         </button>
                     </form>
-                </div>
-
-                
-
-            </div>
-        </div>
         }
+                </div>
+            </div>
+        </div>  
+        
     </>
     )
 }

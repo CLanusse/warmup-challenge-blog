@@ -16,8 +16,9 @@ export const HomeScreen = () => {
 
     return (    
         <div>
-            <h1>Home Screen</h1>
-            <hr/>
+            <header className="home-background">   
+                    <h1>Alkemy Blog</h1>
+            </header>
 
         {
             loading ? <Loader/>

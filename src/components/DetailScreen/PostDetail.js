@@ -13,8 +13,8 @@ export const PostDetail = () => {
         <>
         {active ?
             <div>
-                <h2>{active.title}</h2>
-                <p>{active.body}</p>      
+                <h2 className="detail-title">{active.title}</h2>
+                <p className="detail-text">{active.body}</p>      
                 <Link to="/" className="btn btn-outline-primary">Go back</Link>        
             </div>
 

@@ -17,12 +17,17 @@ export const DetailScreen = () => {
     },[id, dispatch])
 
     return (
-        <>
+       
+        <div className="container px-4 px-lg-5 mt-5 ">
+            <div className="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
             {
                 loading ? <Loader/>
                 :
                 <PostDetail/>
             }
-        </>
+                </div>
+            </div>
+        </div>
     )
 }

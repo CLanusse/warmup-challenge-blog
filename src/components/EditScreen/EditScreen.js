@@ -17,12 +17,17 @@ export const EditScreen = () => {
     },[id, dispatch])
 
     return (
-        <>
-            {
-                loading ? <Loader/>
-                :
-                <PostEdit/>
-            }
-        </>
+        
+        <div className="container px-4 px-lg-5 mt-5 ">
+            <div className="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                {
+                    loading ? <Loader/>
+                    :
+                    <PostEdit/>
+                }
+                </div>
+            </div>
+        </div>        
     )
 }

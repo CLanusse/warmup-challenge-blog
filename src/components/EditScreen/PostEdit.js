@@ -40,9 +40,6 @@ export const PostEdit = () => {
             <div>
                 <h2>Edit</h2>
                 <hr/>
-
-                <div className="row">
-                    <div className="col-md-5 col-sm-12">
                         <form onSubmit={handleSubmit}>
                             <div className="form-group">
                                 <label htmlFor="title">Title: </label>
@@ -67,7 +64,7 @@ export const PostEdit = () => {
                                     onBlur={handleBlur}
                                     type="text"
                                     placeholder="Write here..."
-                                    className="form-control mb-2"
+                                    className="form-control mb-2 form-content"
                                     autoComplete="off"
                                 ></textarea>
                                 
@@ -88,9 +85,6 @@ export const PostEdit = () => {
                             </button>
                         </form>
                     </div>
-                </div>
-            </div>
-
             :
 
             <div>

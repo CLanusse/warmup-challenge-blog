@@ -5,7 +5,7 @@ import { finishLoading, startLoading } from "./ui"
 
 const swalWithBootstrapButtons = Swal.mixin({
     customClass: {
-      confirmButton: 'btn btn-success',
+      confirmButton: 'btn btn-success ml-4',
       cancelButton: 'btn btn-danger'
     },
     buttonsStyling: false

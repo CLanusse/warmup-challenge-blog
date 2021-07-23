@@ -12,7 +12,7 @@ export const DashboardRoutes = () => {
         <>
             <Navbar />
             
-            <div className="mt-4 m-height">
+            <div className="mh-all">
                 <Switch>
                     <Route exact path="/" component={HomeScreen}/>
                     <Route exact path="/detail/:id" component={DetailScreen}/>

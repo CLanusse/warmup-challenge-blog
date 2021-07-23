@@ -1,13 +1,13 @@
 import React from 'react'
 import { useFormik } from 'formik'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { startLogin } from '../../actions/auth'
 
 
 export const LoginScreen = () => {
 
     const dispatch = useDispatch()
-    // TODO - loading para deshabilita botones
+    const {loading} = useSelector(state => state.ui)
 
 
     const initialValues = { email: '', password: '' }
@@ -70,7 +70,7 @@ export const LoginScreen = () => {
                         {(touched.password && errors.password) ? <small className="error alert-danger">{errors.password}</small> : null}
                     </div>
 
-                    <button type="submit" className="btn btn-primary">Login</button>
+                    <button type="submit" className="btn btn-primary btn-login" disabled={loading}>Login</button>
                 </form>
             </div>
         </div>  

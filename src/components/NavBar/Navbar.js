@@ -14,7 +14,7 @@ export const Navbar = () => {
     }
 
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-md navbar-light" id="mainNav">
             
             <Link 
                 className="navbar-brand" 
@@ -23,16 +23,16 @@ export const Navbar = () => {
                 BlogApp
             </Link>
 
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <div className="navbar-nav ">
+            <div className="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+                <div className="navbar-nav ms-auto">
 
                     <NavLink 
                         activeClassName="active"
-                        className="nav-item nav-link text-center ml-2 mr-2" 
+                        className="nav-link px-lg-3 py-3 py-lg-4" 
                         exact to="/"
                     >
                         Home
@@ -40,14 +40,14 @@ export const Navbar = () => {
 
                     <NavLink 
                         activeClassName="active"
-                        className="nav-item nav-link text-center ml-2 mr-2" 
+                        className="nav-link px-lg-3 py-3 py-lg-4" 
                         exact to="/create"
                     >
                         Create Post
                     </NavLink>
 
                     <button 
-                        className="btn btn-primary m-auto"                         
+                        className="btn px-lg-3 py-3 py-lg-4 btn-logout"                         
                         onClick={handleLogout}
                     >
                         Logout
